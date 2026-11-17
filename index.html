@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100817">
+<meta name="description" content="VIP — ألعاب وتحديات وهدايا ممتعة">
+<title>VIP | متجر الألعاب والهدايا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+  <nav class="top-links" id="topLinks">
+    <a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#about">من نحن</a>
+  </nav>
+  <a class="brand" href="#home"><span class="brand-mark">VIP</span><small>TOGETHER • PLAY • SMILE</small></a>
+  <div class="head-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="بحث">⌕</button>
+    <button class="icon-btn" id="favBtn" aria-label="المفضلة">♡</button>
+    <button class="icon-btn" id="cartBtn" aria-label="السلة">♧ <b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="hero-copy">
+  <span class="eyebrow">تجارب تصنع ذكريات</span>
+  <h1>لحظات أجمل،<br><em>تُصنع معاً.</em></h1>
+  <p>اكتشف ألعاب أسئلة وتحديات مرحة وهدايا مختارة لتضيف لمسة مميزة إلى أوقاتكم.</p>
+  <div class="hero-actions"><a class="btn primary" href="#products">اكتشف المجموعة <span>←</span></a><a class="btn ghost" href="#categories">تصفح الأقسام</a></div>
+  <div class="trust-row"><span>✦ خيارات متنوعة</span><span>✦ تغليف أنيق</span><span>✦ تجربة تسوق سهلة</span></div>
+ </div>
+ <div class="hero-art"><div class="orb orb1"></div><div class="orb orb2"></div><div class="hero-card"><span>VIP COLLECTION</span><div class="big-heart">♡</div><strong>PLAY<br>TOGETHER</strong><small>MAKE EVERY MOMENT COUNT</small></div></div>
+</section>
+<div class="ticker"><span>✦ ألعاب وتحديات</span><span>✦ هدايا مختارة</span><span>✦ لحظات تستحق التذكر</span><span>✦ تسوق بسهولة</span></div>
+
+<section class="section" id="categories">
+ <div class="section-head"><div><span class="eyebrow">اختر تجربتك</span><h2>تسوق حسب <em>القسم</em></h2></div><a href="#products" class="text-link">كل المنتجات ←</a></div>
+ <div class="category-grid" id="categoryGrid">
+  <button class="category-card active" data-category="الكل"><span>✧</span><b>كل المنتجات</b><small>اكتشف المجموعة</small></button>
+  <button class="category-card" data-category="ألعاب الأسئلة"><span>❖</span><b>ألعاب الأسئلة</b><small>حوار وتعارف</small></button>
+  <button class="category-card" data-category="تحديات ثنائية"><span>♧</span><b>تحديات ثنائية</b><small>مرح وتعاون</small></button>
+  <button class="category-card" data-category="هدايا"><span>◇</span><b>هدايا</b><small>تفاصيل لطيفة</small></button>
+  <button class="category-card" data-category="ألعاب جماعية"><span>✦</span><b>ألعاب جماعية</b><small>وقت ممتع للجميع</small></button>
+ </div>
+</section>
+
+<section class="section products-section" id="products">
+ <div class="section-head">
+  <div><span class="eyebrow">مختارة بعناية</span><h2>منتجات <em>VIP</em></h2><p class="muted">أفكار بسيطة لوقت مليء بالمرح والذكريات.</p></div>
+  <div class="filters"><input id="searchInput" placeholder="ابحث عن منتج..." aria-label="ابحث عن منتج"><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="new">الأحدث</option><option value="low">السعر: الأقل</option><option value="high">السعر: الأعلى</option></select></div>
+ </div>
+ <div class="product-grid" id="productGrid"><div class="loading">جارٍ تحميل المنتجات...</div></div>
+</section>
+
+<section class="benefits section">
+ <div class="benefit"><span>✦</span><b>اختيارات مميزة</b><small>منتجات مختارة بعناية</small></div>
+ <div class="benefit"><span>◇</span><b>طلب سهل</b><small>خطوات واضحة ومبسطة</small></div>
+ <div class="benefit"><span>♡</span><b>اهتمام بالتفاصيل</b><small>تجربة تسوق لطيفة</small></div>
+</section>
+
+<section class="feature-band" id="about"><div><span class="eyebrow">عن VIP</span><h2>المتعة في التفاصيل الصغيرة.</h2><p>نؤمن أن أجمل الأوقات تبدأ بفكرة بسيطة. نجمع لكم ألعاباً وتحديات وهدايا تساعد على صناعة لحظات لطيفة ومميزة.</p></div><div class="feature-symbol">VIP</div></section>
+
+<section class="section faq"><div class="section-head"><div><span class="eyebrow">معلومات تهمك</span><h2>أسئلة <em>شائعة</em></h2></div></div>
+ <details><summary>كيف أطلب من المتجر؟</summary><p>أضف المنتجات إلى السلة، ثم أكمل بيانات الطلب وأرسله. سيتواصل معك المتجر لتأكيد التفاصيل.</p></details>
+ <details><summary>هل الأسعار وبيانات التوصيل نهائية؟</summary><p>تعرض صفحة إتمام الطلب ملخص مشترياتك. يتم تأكيد رسوم التوصيل ووسيلة الدفع معك قبل اعتماد الطلب.</p></details>
+ <details><summary>كيف أتواصل مع المتجر؟</summary><p>يمكنك التواصل عبر رقم واتساب الرسمي الذي يضيفه صاحب المتجر في إعدادات ملف store.js.</p></details>
+</section>
+</main>
+
+<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">VIP</span><small>TOGETHER • PLAY • SMILE</small></a><p>© <span id="year"></span> VIP. جميع الحقوق محفوظة.</p><a href="admin.html">دخول الإدارة</a></footer>
+
+<nav class="bottom-nav" aria-label="التنقل السفلي">
+ <a href="#home" class="bottom-link active"><span>⌂</span><small>الرئيسية</small></a>
+ <a href="#categories" class="bottom-link"><span>▦</span><small>الأقسام</small></a>
+ <a href="#products" class="bottom-link"><span>◇</span><small>المنتجات</small></a>
+ <button class="bottom-link" id="bottomFavBtn"><span>♡</span><small>المفضلة</small></button>
+ <button class="bottom-link" id="bottomCartBtn"><span>♧</span><small>السلة</small><i id="bottomCartCount">0</i></button>
+</nav>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="سلة المشتريات">
+ <div class="drawer-head"><h3>سلة مشترياتك</h3><button class="close-btn" data-close aria-label="إغلاق">×</button></div>
+ <div id="cartItems" class="cart-items"></div>
+ <div class="cart-total"><span>الإجمالي</span><b id="cartTotal">0 ر.س</b></div>
+ <button class="btn primary full" id="checkoutBtn">إتمام الطلب</button>
+</aside>
+
+<dialog id="checkoutDialog">
+ <form id="checkoutForm" class="checkout-form">
+  <div class="drawer-head"><h3>إتمام الطلب</h3><button type="button" class="close-btn" id="closeCheckout">×</button></div>
+  <label>الاسم الكامل<input name="name" required maxlength="80" autocomplete="name"></label>
+  <label>رقم الجوال<input name="phone" required inputmode="tel" maxlength="25" autocomplete="tel"></label>
+  <div class="form-two">
+   <label>المدينة<input name="city" required maxlength="60" autocomplete="address-level2"></label>
+   <label>الحي<input name="neighborhood" required maxlength="80"></label>
+  </div>
+  <label>العنوان الوطني<input name="nationalAddress" required maxlength="120" placeholder="رقم المبنى، الرمز البريدي، الرقم الإضافي إن توفر"></label>
+  <label>العنوان بالتفصيل<textarea name="address" required rows="2" maxlength="300"></textarea></label>
+  <label>ملاحظات (اختياري)<textarea name="notes" rows="2" maxlength="300"></textarea></label>
+  <p class="muted small">إرسال الطلب لا يعني خصم مبلغ أو تنفيذ دفع إلكتروني. سيتم التواصل لتأكيد الطلب ورسوم التوصيل ووسيلة الدفع.</p>
+  <button class="btn primary full" type="submit" id="submitOrderBtn">إرسال الطلب</button>
+  <p id="checkoutMsg" class="form-msg" role="status"></p>
+ </form>
+</dialog>
+
+<dialog id="productDialog" class="product-dialog"><div id="productDetails"></div></dialog>
+<dialog id="successDialog" class="success-dialog"><div id="successContent"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="store.js"></script>
+</body></html>
